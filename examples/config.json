@@ -1,0 +1,12 @@
+{
+  "prefix": "example",
+  "organism": "Synthetic example",
+  "samples": [
+    {
+      "name": "demo",
+      "isolate": "demo",
+      "fasta": "data/genome.fasta",
+      "busco_dir": "data/busco"
+    }
+  ]
+}

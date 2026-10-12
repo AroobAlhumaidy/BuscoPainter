@@ -1,0 +1,6 @@
+sample	busco_id	status	sequence	ft_start	ft_end	ft_strand	mrna_id	severity	code	detail
+demo	ex2at0	Complete	contig_1	1086	803	-	MP000002	WARNING	MULTI_SEGMENT_MODEL	2 CDS segments, gaps [40] bp (unverified spliced alignment)
+demo	ex6at0	Complete	contig_1	3600	3753	+	MP000008	WARNING	TRANSLATION_OMITTED	miniprot reports frameshift(s) inside the alignment
+demo	ex7at0	Complete	contig_1	4200	4543	+	MP000009	WARNING	MULTI_SEGMENT_MODEL	2 CDS segments, gaps [160] bp (unverified spliced alignment)
+demo	ex7at0	Complete	contig_1	4200	4543	+	MP000009	WARNING	FRAME_INCONSISTENT	phases 0,0
+demo	ex7at0	Complete	contig_1	4200	4543	+	MP000009	WARNING	TRANSLATION_OMITTED	CDS segments are not in one continuous reading frame (GFF phases)

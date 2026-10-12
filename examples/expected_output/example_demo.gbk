@@ -1,0 +1,397 @@
+LOCUS       contig_1                6000 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  contig_1.
+ACCESSION   contig_1
+VERSION     contig_1
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  Synthetic example
+            .
+FEATURES             Location/Qualifiers
+     source          1..6000
+                     /organism="Synthetic example"
+                     /mol_type="genomic DNA"
+                     /isolate="demo"
+                     /note="BuscoPainter T7.1-fixed.3: only BUSCO example_odb12
+                     marker genes are annotated. This is not a whole-genome gene
+                     annotation; unannotated ORFs are expected."
+     gene            201..386
+                     /locus_tag="demo_ex1at0_MP000001"
+                     /note="BUSCO ex1at0 Complete; GFF evidence:
+                     busco_sequences/single_copy_busco_sequences/ex1at0.gff mRNA
+                     MP000001 contig_1:201-386(+); Identity=0.9000;
+                     Target=ex1at0_0:000001 1 99"
+     CDS             201..386
+                     /locus_tag="demo_ex1at0_MP000001"
+                     /product="synthetic example protein ex1at0"
+                     /codon_start=1
+                     /transl_table=1
+                     /note="BUSCO ex1at0 (Complete), lineage example_odb12;
+                     full_table line 5: contig_1:200-383(+) score=500.0
+                     length=62"
+                     /note="GFF evidence:
+                     busco_sequences/single_copy_busco_sequences/ex1at0.gff mRNA
+                     MP000001 contig_1:201-386(+); Identity=0.9000;
+                     Target=ex1at0_0:000001 1 99"
+                     /translation="MRACSYTQTLYLLGRSITLNLSRRAYYKVLHVSMAFTLPNNNGEK
+                     FCRGIRVNDMYLFLDM"
+     gene            complement(801..1086)
+                     /locus_tag="demo_ex2at0_MP000002"
+                     /note="BUSCO ex2at0 Complete; GFF evidence:
+                     busco_sequences/single_copy_busco_sequences/ex2at0.gff mRNA
+                     MP000002 contig_1:801-1086(-); Identity=0.9000;
+                     Target=ex2at0_0:000002 1 99"
+     CDS             complement(join(801..996,1037..1086))
+                     /locus_tag="demo_ex2at0_MP000002"
+                     /product="synthetic example protein ex2at0"
+                     /codon_start=1
+                     /transl_table=1
+                     /note="BUSCO ex2at0 (Complete), lineage example_odb12;
+                     full_table line 6: contig_1:1086-803(-) score=500.0
+                     length=82"
+                     /note="GFF evidence:
+                     busco_sequences/single_copy_busco_sequences/ex2at0.gff mRNA
+                     MP000002 contig_1:801-1086(-); Identity=0.9000;
+                     Target=ex2at0_0:000002 1 99"
+                     /note="CDS joins 2 miniprot segments separated by [40] bp;
+                     cis-introns are rare in trypanosomatids, so this structure
+                     is unverified"
+                     /translation="MWFCNTTPSRVSGCHQAIAKAGRRGRSVWEFPELLEHLKWNPLLP
+                     FRRLCDRDSIMNSPSREEPEGDSLLSRVDFFYPSAP"
+     gene            1501..1627
+                     /locus_tag="demo_ex3at0_MP000003"
+                     /note="BUSCO ex3at0 Complete; GFF evidence:
+                     busco_sequences/single_copy_busco_sequences/ex3at0.gff mRNA
+                     MP000003 contig_1:1501-1627(+); Identity=0.9000;
+                     Target=ex3at0_0:000003 1 99"
+     CDS             1501..1627
+                     /locus_tag="demo_ex3at0_MP000003"
+                     /product="synthetic example protein ex3at0"
+                     /codon_start=2
+                     /transl_table=1
+                     /note="BUSCO ex3at0 (Complete), lineage example_odb12;
+                     full_table line 7: contig_1:1500-1624(+) score=500.0
+                     length=42"
+                     /note="GFF evidence:
+                     busco_sequences/single_copy_busco_sequences/ex3at0.gff mRNA
+                     MP000003 contig_1:1501-1627(+); Identity=0.9000;
+                     Target=ex3at0_0:000003 1 99"
+                     /translation="MIAERPFALGATAKFSLQDMIVLESDLRGWSMGSWLDRVKG"
+     gene            2201..2341
+                     /locus_tag="demo_ex4at0_MP000004"
+                     /note="BUSCO ex4at0 Duplicated; GFF evidence:
+                     busco_sequences/multi_copy_busco_sequences/ex4at0.gff mRNA
+                     MP000004 contig_1:2201-2341(+); Identity=0.9000;
+                     Target=ex4at0_0:000004 1 99"
+     CDS             2201..2341
+                     /locus_tag="demo_ex4at0_MP000004"
+                     /product="synthetic example protein ex4at0"
+                     /codon_start=1
+                     /transl_table=1
+                     /note="BUSCO ex4at0 (Duplicated), lineage example_odb12;
+                     full_table line 8: contig_1:2200-2338(+) score=500.0
+                     length=47"
+                     /note="GFF evidence:
+                     busco_sequences/multi_copy_busco_sequences/ex4at0.gff mRNA
+                     MP000004 contig_1:2201-2341(+); Identity=0.9000;
+                     Target=ex4at0_0:000004 1 99"
+                     /translation="MIHTVRLSTTNRDFQSYNMDEPHYSSTQIFLNSGSQSHIRHQGWV
+                     C"
+     gene            2801..2941
+                     /locus_tag="demo_ex4at0_MP000005"
+                     /note="BUSCO ex4at0 Duplicated; GFF evidence:
+                     busco_sequences/multi_copy_busco_sequences/ex4at0.gff mRNA
+                     MP000005 contig_1:2801-2941(+); Identity=0.9000;
+                     Target=ex4at0_0:000005 1 99"
+     CDS             2801..2941
+                     /locus_tag="demo_ex4at0_MP000005"
+                     /product="synthetic example protein ex4at0"
+                     /codon_start=1
+                     /transl_table=1
+                     /note="BUSCO ex4at0 (Duplicated), lineage example_odb12;
+                     full_table line 9: contig_1:2800-2938(+) score=500.0
+                     length=47"
+                     /note="GFF evidence:
+                     busco_sequences/multi_copy_busco_sequences/ex4at0.gff mRNA
+                     MP000005 contig_1:2801-2941(+); Identity=0.9000;
+                     Target=ex4at0_0:000005 1 99"
+                     /translation="MIHTVRLSTTNRDFQSYNMDEPHYSSTQIFLNSGSQSHIRHQGWV
+                     C"
+     gene            3601..3756
+                     /locus_tag="demo_ex6at0_MP000008"
+                     /note="BUSCO ex6at0 Complete; GFF evidence:
+                     busco_sequences/single_copy_busco_sequences/ex6at0.gff mRNA
+                     MP000008 contig_1:3601-3756(+); Identity=0.9000;
+                     Target=ex6at0_0:000008 1 99"
+     CDS             3601..3756
+                     /locus_tag="demo_ex6at0_MP000008"
+                     /product="synthetic example protein ex6at0"
+                     /codon_start=1
+                     /transl_table=1
+                     /note="BUSCO ex6at0 (Complete), lineage example_odb12;
+                     full_table line 12: contig_1:3600-3753(+) score=500.0
+                     length=52"
+                     /note="GFF evidence:
+                     busco_sequences/single_copy_busco_sequences/ex6at0.gff mRNA
+                     MP000008 contig_1:3601-3756(+); Identity=0.9000;
+                     Target=ex6at0_0:000008 1 99"
+                     /note="translation omitted: miniprot reports frameshift(s)
+                     inside the alignment"
+     gene            4201..4546
+                     /locus_tag="demo_ex7at0_MP000009"
+                     /note="BUSCO ex7at0 Complete; GFF evidence:
+                     busco_sequences/single_copy_busco_sequences/ex7at0.gff mRNA
+                     MP000009 contig_1:4201-4546(+); Identity=0.9000;
+                     Target=ex7at0_0:000009 1 99"
+     CDS             join(4201..4240,4401..4546)
+                     /locus_tag="demo_ex7at0_MP000009"
+                     /product="synthetic example protein ex7at0"
+                     /codon_start=1
+                     /transl_table=1
+                     /note="BUSCO ex7at0 (Complete), lineage example_odb12;
+                     full_table line 13: contig_1:4200-4543(+) score=500.0
+                     length=62"
+                     /note="GFF evidence:
+                     busco_sequences/single_copy_busco_sequences/ex7at0.gff mRNA
+                     MP000009 contig_1:4201-4546(+); Identity=0.9000;
+                     Target=ex7at0_0:000009 1 99"
+                     /note="CDS joins 2 miniprot segments separated by [160] bp;
+                     cis-introns are rare in trypanosomatids, so this structure
+                     is unverified"
+                     /note="GFF phases are not consistent with one reading frame
+                     across segments (possible frameshift); exported as given"
+                     /note="translation omitted: CDS segments are not in one
+                     continuous reading frame (GFF phases)"
+ORIGIN
+        1 agactttcaa agatatgctg ggtagaggtc gaggttatta tttgttacca attctcattg
+       61 tgtttcggaa cttgcgtttt aggtatgtct tagtgactct aaataccaag gcagtcctcg
+      121 atccgttcct aataaggaat ggtgattccc tgtcatacca atctaccccc tgttatgcgc
+      181 gtttgtcgtt agaccaatgt atgagagcat gctcctacac acaaactctt tacctactgg
+      241 gccgatcaat cacgcttaac ttatctcgac gtgcgtacta taaagtacta cacgtgtcca
+      301 tggcctttac gttaccaaac aacaacggcg agaaattttg tcgaggtatc cgtgtgaacg
+      361 acatgtacct atttcttgat atgtaagccc cagtaatgga gttacgtgaa atggccgtgg
+      421 ttgcctcggt tcctctggag gtgcgcgcag gtttagtgat ctggatcagg cgtttgaaca
+      481 ggactggaca acgctccgat caagtacctg gggtgtggat catggtcggt gcatagtagt
+      541 gggcacgtac atcctccgtc ggtcccccaa ggccggctcc accttagcga ttcgcataaa
+      601 gggaccattc ccctcgcttt gcgttaccaa gcacctctac gggtattggt caccgttagg
+      661 attgaggaaa atatttacgc aatacgaaaa gcgtcgtctc gtatcctcat ttatctatcg
+      721 cggtagcagc acttaattac cagcggagca catagtacta gacagcagat gacctagctt
+      781 acaattatcc cccgtgctaa ttacggggct gaagggtaga agaagtcaac ccgtgatagt
+      841 aaactatcac cttcaggttc ttctctactt ggactgttca taatactatc cctgtcacat
+      901 aaacgtcgga atggcaagag agggttccac tttaagtgtt ctagcaactc aggaaattcc
+      961 cacacggagc gtccacgcct accggccttc gcgatcaaaa aaaaaaaaaa aaaaaaaaaa
+     1021 aaaaaaaaaa aaaaaagctt gatggcaccc ggaaacccta gaaggggtgg tattgcaaaa
+     1081 ccacataaat actagtgtca tgcgctaatt ttcagactcg tccgcgaact tagtaagagc
+     1141 cggagaactg ccccgatgtg cccgtacgag cgtagcgtta cgagtatggg caagtaccaa
+     1201 gcagagttgc agtttaggcg gtaattaatc ttagagactc cgctaaatgc tccgcgtgtt
+     1261 tcattgctgg cgacgcatcc cgtttaggaa gtgattgtaa gaaccggcgg agcgtgtacg
+     1321 gtactagtaa aaaagcaata aatacctcca gtacagttat taagtcgaaa caccaagaca
+     1381 agctctatta ggccaactta acttagtccc acctactata gacagtattg gggattcgat
+     1441 ttcgtcgacg atctgcttcc acacgccagc tcctagataa tagagataac ccgctgtctc
+     1501 catgattgcc gagagacctt tcgcgctggg agccacagcg aaattctctc tgcaagatat
+     1561 gatagtcctg gagtctgatc tgcgcggatg gagcatggga agctggttgg accgagttaa
+     1621 agggtaatta gtacctagga gtgtatagtg ccctctttaa tgggtgactc agtccttatg
+     1681 ttgatgatca ctccattgct aaaattaacc cataatcggc tcatcggcat tgttgcccat
+     1741 tttcagagcg gtttcgcaac ccactttcct accacgtaga cgccatgcgt gtctattcgg
+     1801 ctatggaaag ggtatgggaa tggagaaacc agtagactag taaaaagggg tagagtgcca
+     1861 acggacaagg cagcctcctt gatggcgtgg aggatgggtc gcggtatcga gtacgtgatg
+     1921 cttagccata gcatgttttc taaggatacg atgtcagcgg taatgttatc gttgaccacg
+     1981 gcgacgttat ttgtattggt gttagggctt atgcatcggt attgctgacc aaatccacgt
+     2041 gagatttggg taaatcccct atggagcgaa gcttctttgt agtcccacgg cttacctgga
+     2101 gcatgccgca gccgacaggt ggagttctac gcagctgaat ctgcgactaa gctggtagga
+     2161 caaatagtgg gtcccgcacc tggacccgca gatacctggc atgattcata cggtgcgcct
+     2221 gagcaccaca aaccgcgatt tccagtccta caatatggac gagcctcact atagttcgac
+     2281 gcaaatcttt ttgaactctg gctcccaatc ccacataagg catcagggat gggtgtgcta
+     2341 atactctggt gaggttccct gcttcaggta aaccatcagg agagccatta tggcatcttg
+     2401 actcgggtga tgtctaaaca cttcttcttt tttattcatg agacttgtcc ggaagtagat
+     2461 ctggagctgg acgcatattc tgcgaagtat tactgagtat cctcgcatat tgggcggccc
+     2521 gagcgattag cgcatcatcg tatcaagaac gcgttgcaag acttgtgtaa aaaacccaca
+     2581 tggttacctt ctcaggccat aaggccttaa acacatttac aggcccgata agtgttactg
+     2641 cgacaagtca ccgcctatcc cgaaacgcgg cagcacgttc aacgttagca ggcaaaattc
+     2701 ggaagttcat aacaatgggg gagtacgacg cgaaataagt gcagagaagc gaaatgcaac
+     2761 gtgcacgatt gagcgttagc ctgtcaaaaa tgcataaagc atgattcata cggtgcgcct
+     2821 gagcaccaca aaccgcgatt tccagtccta caatatggac gagcctcact atagttcgac
+     2881 gcaaatcttt ttgaactctg gctcccaatc ccacataagg catcagggat gggtgtgcta
+     2941 atgctgcctt gcgctggtac gtacctctac atgtaagcga gtggccgcgc cctcaagaat
+     3001 acttgcatca ggtacgcgtg gtcaggggtg ccctatcgtt ggatacgcgc ttcttaatga
+     3061 tcgtggctaa catgataaaa gcgaatgagc cacgaaagag tgggtatatg ttcaggcagg
+     3121 cacgggacaa tgaggggcag cagttaaacg agttgtgact tatgatgtac atgatgaaag
+     3181 gtgtggtagt cgacctgcac tcgtttagaa gtacgagtgc acctatcgaa cctactcgcc
+     3241 tttactgcta gtgggaagat ccccaacata agtgtattca ggacgccaga ggatcgcgtc
+     3301 acacttctct aaattggtga cccgtaatct cagagggtaa cccccggtga ggcggcgcac
+     3361 aagacgccag ggtgcccccc ttggaacccc cgatcagtgc cacgagggta gggcccagat
+     3421 ggaccattgc tgtagtatga gagtatggct atcgcatatg aagatacacc aaagggggta
+     3481 atgtccatgc cgggtgctag aatcaacaga cccgaatcct cctttgatta cgcattgatg
+     3541 gtcggttttt tcggaacccg atcgggtggc ccgcacagga tcgtcataaa ctctacagta
+     3601 atgtcagcat cgacccttta ccaaaagaaa agcggggccc tgtacgttcc tccatataac
+     3661 cacctttcca tagtgtggcg gttcgaggag ggtacgatag cagatgtatc cgtgcaaggg
+     3721 tccgctggta cctgccgtcc caccccttcc cggtaaaggt cgagatatcg cgattcactg
+     3781 ggcaagacga tacactcgcc ttacagttcc tggttacgcg accgcgatcg cgaggtctcg
+     3841 ggagctctga acgaggatga actgagagaa tagattgaag ggcggctgat ctactgcgtc
+     3901 ggtactggcc ggaggttagt gcttgagatg tcttgccctg acgagtcctc cggcgcacgg
+     3961 accctttttg tgggtccgtt cattaacgac ccgattttgg tgaaagctta aaactcagca
+     4021 acagtattgt aaattcccgg gactcacacc cgtatgatga ttccgtcctc cacataacga
+     4081 ggttgtggta tttagttgaa acgttcgtag atgatgtcat cgctttggct attccagtca
+     4141 tttactcgtc tttctgcagc ttcacctgaa cgatagcggt ccaaaacgaa tgcacatgca
+     4201 atgccattta gccgcggcaa tacatcggag acgcctgcca caaggactcg tgcctgccat
+     4261 tttcgcatca gcgggtaaaa cgtctatcgg cacaaccccc attatggaat gtacgaagcc
+     4321 ttttcgataa tgtctaagcg tgtagcggag ctgactaacc ccataattgg tcttacgata
+     4381 agaccgctga gtcgcgtttt atttcgaaat caagacccgt cggacaatta ccgatcgtaa
+     4441 ttcggcaact tttatgggag gagcctttaa tgcagcccgc aatatgaagg attgcagaca
+     4501 gcggagcgag actgcacatg attcgggtag tacggccgca ggataacaac gacaaacgcg
+     4561 gaagtcgtac aatgtcgggt ggtgacgggt cgcggtccag tggcacatac aacatagtac
+     4621 tgacgaatga gaaatgcgga gacgcgtgga gggttccggc gaagggtgcc ccgttaagca
+     4681 agctatgcgt aggtttatca catgcttagc aacgctagga cgggatgccc gctgacccaa
+     4741 gtagtctgta acgtaatcga aaaatcatcc acggcctgga tatatataag tgggataaaa
+     4801 tccctggcga cctggtgctg agcgtacatc tcttaaatct atatggtata ggagacgccg
+     4861 ctgctggaat aagcgagcga agtagccttg cccgtccact ctgatcttcg tcgaattaaa
+     4921 attcagccac tttgaagagg aggaagggga caatcaccgc gctcaaacgt ggcttattca
+     4981 aagcacaaca gatcctaacc gcgttcctta ttttgagtgc actgaatcgg ctgaggcact
+     5041 ctcgataccc cccgacctat ctacgcatcg tcgcaactaa gacaaccggt ggttgtgatt
+     5101 agaatccttc aatgtgacag cgccgaccta acgtaccata tgtcatctga gtcgctacat
+     5161 tcaggtgtga tatggccagc aaaggtggta tggacaactg cgggattcaa cgaatccgat
+     5221 tttcctgata ccattgatcc aggtcctgtt tgagcctcag cttttctgta tagtgacgaa
+     5281 tactctctgg aggggatgga cgcggggcca gcctccagat ggcccaggct cacagacttc
+     5341 atcgttagtt cgtccaccat gtaatcatat gatgtcgatg aacgcctaat gctcgtccgc
+     5401 cgaattgtcc agtcggcgag ggtgccaatg cgcgggctga taaatcaggc ggcgtcgctc
+     5461 tgacgaatgg tcctgaatca ggaatgttct aggggtgtag ccatgaaaac ctcgcataat
+     5521 agctttcgac cggctttgat cccacccccc acatatccct cttccgaccc cgcccagatc
+     5581 gagccctatt tagagtttgc atcaatagaa tgtgaagatc tctggataag gaggcctggg
+     5641 ggggtctcgt cgctggaatt agcagtctac ggcgcactga ctgactgagc aggttttgac
+     5701 aggaaccgtg ccttttcaca aaacatataa cggtacgctc tgcagttaca gtccaagccg
+     5761 tccgcgtcgc ttatctgcgg taagtaaatc actctagaga agtccgtagg acactctatt
+     5821 aaacggacgg acgttcttca cacaggtgaa aggcacgttt aaattaaata cctgttatag
+     5881 aaccgcatgg taaagttctc cagccgatct cctgagacta ccctgccggg cagcgtcatc
+     5941 accctagaag acaggatgtt cttgtggata cgacgccggc aacctgcaag gttaaggtga
+//
+LOCUS       contig_2                2500 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  contig_2.
+ACCESSION   contig_2
+VERSION     contig_2
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  Synthetic example
+            .
+FEATURES             Location/Qualifiers
+     source          1..2500
+                     /organism="Synthetic example"
+                     /mol_type="genomic DNA"
+                     /isolate="demo"
+                     /note="BuscoPainter T7.1-fixed.3: only BUSCO example_odb12
+                     marker genes are annotated. This is not a whole-genome gene
+                     annotation; unannotated ORFs are expected."
+     gene            complement(301..441)
+                     /locus_tag="demo_ex4at0_MP000006"
+                     /note="BUSCO ex4at0 Duplicated; GFF evidence:
+                     busco_sequences/multi_copy_busco_sequences/ex4at0.gff mRNA
+                     MP000006 contig_2:301-441(-); Identity=0.9000;
+                     Target=ex4at0_0:000006 1 99"
+     CDS             complement(301..441)
+                     /locus_tag="demo_ex4at0_MP000006"
+                     /product="synthetic example protein ex4at0"
+                     /codon_start=1
+                     /transl_table=1
+                     /note="BUSCO ex4at0 (Duplicated), lineage example_odb12;
+                     full_table line 10: contig_2:441-303(-) score=500.0
+                     length=47"
+                     /note="GFF evidence:
+                     busco_sequences/multi_copy_busco_sequences/ex4at0.gff mRNA
+                     MP000006 contig_2:301-441(-); Identity=0.9000;
+                     Target=ex4at0_0:000006 1 99"
+                     /translation="MIHTVRLSTTNRDFQSYNMDEPHYSSTQIFLNSGSQSHIRHQGWV
+                     C"
+     gene            1001..1150
+                     /locus_tag="demo_ex5at0_MP000007"
+                     /note="BUSCO ex5at0 Fragmented; GFF evidence:
+                     busco_sequences/fragmented_busco_sequences/ex5at0.gff mRNA
+                     MP000007 contig_2:1001-1150(+); Identity=0.9000;
+                     Target=ex5at0_0:000007 1 99"
+     CDS             1001..1150
+                     /locus_tag="demo_ex5at0_MP000007"
+                     /product="synthetic example protein ex5at0"
+                     /codon_start=1
+                     /transl_table=1
+                     /note="BUSCO ex5at0 (Fragmented), lineage example_odb12;
+                     full_table line 11: contig_2:1000-1150(+) score=120.0
+                     length=50"
+                     /note="GFF evidence:
+                     busco_sequences/fragmented_busco_sequences/ex5at0.gff mRNA
+                     MP000007 contig_2:1001-1150(+); Identity=0.9000;
+                     Target=ex5at0_0:000007 1 99"
+                     /translation="MAQVPSVFSVGLDNSLYFIGNLRTPLWIRETAIKVIRHSFWYRRY
+                     STRAA"
+ORIGIN
+        1 tttttagggg ggctcgttca tgcacagaat aagcgagtag cgcagtcatg gcgtctggcg
+       61 aaacatatct cacgggctgg tccatcgggc cgaggatctt accatcatcg ccgctcgcat
+      121 actttcatta cgtgaatagt cacccatatg aacaatactg cccattgcac ccgtgatgtg
+      181 ccgtcaatca ggaggcctag gagggagctg ttccgatgcg tttgacgtct tcgttcagtg
+      241 aatacgtccc tctggtgata cagtcatggg accgggggtt cacctcgttg agcgacgaca
+      301 ttagcacacc catccctgat gccttatgtg ggattgggag ccagagttca aaaagatttg
+      361 cgtcgaacta tagtgaggct cgtccatatt gtaggactgg aaatcgcggt ttgtggtgct
+      421 caggcgcacc gtatgaatca tgtacattca tcatactggc gattattcca ctgatgcttt
+      481 ggtccaacta tccggtaacg ctatggtgtg ggcggttaac ggtcatgtcc gaatacggta
+      541 accctttcag ggatatcgct ccttaaggct tgctcttgct taccgaacgt gaaatactca
+      601 gagaatgatt ataggcaaca cacaatcagt tccgagtgct ttagtttgtt gccagtaccg
+      661 cttacagata ctcagaaacc tggcagatgt aaagatagta tcagttccga gctatgtgct
+      721 agctaaagga tctacttttc atactacgta aagaattcgg gagacggtgc taaggctgca
+      781 cccggaggag ctttaaaccc tggttgctac gtcgctatgt gtagtggata ctggtagatc
+      841 ctaaaagcac caggaatgtt gtggtctcgc tgatctggta aaacgcgctc gttcccattc
+      901 ggagatacag atagagcgcg cactgagtac cgaagagcat actttttact tcctgaccaa
+      961 tgctagattg cctcattgac gtgagcgctt gtgcatgcaa atggctcaag ttccgtcagt
+     1021 attttctgtt ggcttggaca actctctcta ttttattggc aatttaagga ctcctctgtg
+     1081 gattcgagag acggcaatta aagtgatccg gcacagtttc tggtatcgaa ggtactccac
+     1141 aagagctgct aacccccaat cttacgtggc ccgcagcata ctggcctccc tatgtataca
+     1201 ctttggtcgg cccatggacg gtatactgcg gaattgtggg cacatgttag gcgcttcggt
+     1261 ctagggccgt gtcatatcat caggccatgc gctggaggaa cctagatgga catacaggcc
+     1321 gtccattgtt gggtgcggtg ctatgagcta taattacccg ttattgctaa aagacagcta
+     1381 agctgagtta aagccctatc attatgttgc tagggttacc tatacgtgca gcgtcttaag
+     1441 actaaacgaa gtagcgtttg ctccccggat tcgacgcttc aagtcgaatt ggttccttgc
+     1501 attaggggat acctcagttc ttacggggag cacgcttgga gccttaggac aaatccgcca
+     1561 acttggccga gtcctccatg gactagtcta gttctcatta gttgctcagg ccccagcatg
+     1621 cgcaacgttg caacgttgat actaatcctt cggaattcaa agccggcact gcgggggctt
+     1681 atagaccatc gcgaggaccg cggtagtctg agtggtcatt ttgatctaat tcaacgcggg
+     1741 gttctatact tacccaatgc accctagcta ctgtgagcaa tggcgatctg cacaaagttt
+     1801 aacgttaaat aaacccagtc ccgaaaaaca cgaggcgaca gaatgcctga ctttttgact
+     1861 actcttaaag cgatagtcca agggcgacat gagaaagtgg attgttagcg atgtgcagag
+     1921 tgttcgcctc gatactcaat tctaaaggga cactatgtag tccatggccc gacacgtatg
+     1981 gattgctact agcccccgga atcctcatcc taatccggag cttcctcctg tacggcattt
+     2041 tcctcgtagt cgaccggact gagcttcgta tcggagaggg gacaactaag cgcgcctgaa
+     2101 cctaacgcca tagctccctg cgcacactat gaccgaatta ttagacgcgt ctccgccatt
+     2161 ctcgaagctg ttcttccagc ccacttgcgt ccaggaagca ctattacatc ttaagggacc
+     2221 acgagcatgt aggtctagct tgaggaaaag gcatgcgaga tggctatgca tacgtaacta
+     2281 agaaacacag aggcgccata tcgagtaaca gcaggcctaa cacaagtgcc cacgccgttg
+     2341 ttagtaattg actgttgtat acactattgc agaggcacct aatggacact gccggtgggg
+     2401 ctatagagcc ttcagtgcca gcctataagt caaacatttc caagacatta ggttgtaagt
+     2461 cgacatgagg acccggtctt agcacggtct tgcttgcttt
+//
+LOCUS       contig_3                 800 bp    DNA     linear   UNK 01-JAN-1980
+DEFINITION  contig_3.
+ACCESSION   contig_3
+VERSION     contig_3
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  Synthetic example
+            .
+FEATURES             Location/Qualifiers
+     source          1..800
+                     /organism="Synthetic example"
+                     /mol_type="genomic DNA"
+                     /isolate="demo"
+                     /note="BuscoPainter T7.1-fixed.3: only BUSCO example_odb12
+                     marker genes are annotated. This is not a whole-genome gene
+                     annotation; unannotated ORFs are expected."
+ORIGIN
+        1 cacaccaact ggtatgagtg tcaccggccg gaacatcgac gttggaggag acgccaggag
+       61 atattagaca caagcgaatc gccatctcgt atttcttttc cgagccgcac tgtgcgcagg
+      121 aaacgaggga ctatcgagat accagtcata tgtcgtggct cgcgtaacct atagaattta
+      181 ttgcgaccaa aacggcatgt gaagccgcac caatcatcca tctcgtgaca gcgtccagct
+      241 ttcgacctca tcttcttgtg ggaggtagcc gatcatgagg ggtacgtgtt tgaactccca
+      301 cgtagcgccc gaacagcaac tcagttcagt aatcactcgt gggcacacta gatgtccccg
+      361 acaatgtgag gttcagatag attgcatgcg tcggtcaagc tcatctccat tgttttacga
+      421 gcggccatca taatatcttt gacttcagaa tacacgccga gcgcttacat acggtcggga
+      481 aatccatcgc aacccctgcc gtgcatacaa tataccattc cactacaaac tgattatcgc
+      541 tgtatcaagt atcttgacgc ccaaactatc cgctaacgtg aagtagaaac tccgcgaccc
+      601 cattcccatt gggcctcggt ggttcttggt caaccaagtc ctcttgtata atgcaatgaa
+      661 acatagaggt ttccatacgc tccggccctc gctgcggggc ttggattgcc gggaaagcgt
+      721 tctgaccctc ttaactcaac gtccctgaca caaagtcaac ccttatcggt acgcttgcac
+      781 gcgccccact aactctatgg
+//

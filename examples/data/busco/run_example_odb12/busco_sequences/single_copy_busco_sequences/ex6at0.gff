@@ -1,0 +1,3 @@
+contig_1	miniprot	mRNA	3601	3756	1000	+	.	ID=MP000008;Rank=1;Identity=0.9000;Positive=0.9500;Target=ex6at0_0:000008 1 99;Frameshift=1
+contig_1	miniprot	CDS	3601	3756	1000	+	0	Parent=MP000008;Rank=1;Identity=0.9000;Target=ex6at0_0:000008 1 99
+contig_1	miniprot	stop_codon	3754	3756	0	+	0	Parent=MP000008;Rank=1

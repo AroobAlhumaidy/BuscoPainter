@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "buscopainter"
+version = "0.1.0"
+description = "Transfer BUSCO marker-gene annotations (miniprot models) onto a genome assembly as GenBank for Artemis. Not a gene predictor."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Aroob Alhumaidy" }]
+keywords = ["BUSCO", "GenBank", "Artemis", "genome annotation", "miniprot", "bioinformatics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Development Status :: 4 - Beta",
+]
+# Lower bounds = the versions the release was validated with. See requirements-lock.txt.
+dependencies = [
+    "biopython>=1.88",
+    "pandas>=3.0",
+]
+
+[project.optional-dependencies]
+yaml = ["PyYAML>=6.0"]
+orthodb = ["requests>=2.31"]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+buscopainter = "buscopainter.painter:main"
+buscopainter-validate = "buscopainter.validate:main"
+
+[project.urls]
+Homepage = "https://github.com/AroobAlhumaidy/BuscoPainter"
+Issues = "https://github.com/AroobAlhumaidy/BuscoPainter/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

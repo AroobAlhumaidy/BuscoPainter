@@ -1,0 +1,4 @@
+contig_1	miniprot	mRNA	4201	4546	1000	+	.	ID=MP000009;Rank=1;Identity=0.9000;Positive=0.9500;Target=ex7at0_0:000009 1 99
+contig_1	miniprot	CDS	4201	4240	1000	+	0	Parent=MP000009;Rank=1;Identity=0.9000;Target=ex7at0_0:000009 1 99
+contig_1	miniprot	CDS	4401	4546	1000	+	0	Parent=MP000009;Rank=1;Identity=0.9000;Target=ex7at0_0:000009 1 99
+contig_1	miniprot	stop_codon	4544	4546	0	+	0	Parent=MP000009;Rank=1

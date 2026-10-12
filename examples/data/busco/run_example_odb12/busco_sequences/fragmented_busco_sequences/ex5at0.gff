@@ -1,0 +1,2 @@
+contig_2	miniprot	mRNA	1001	1150	1000	+	.	ID=MP000007;Rank=1;Identity=0.9000;Positive=0.9500;Target=ex5at0_0:000007 1 99
+contig_2	miniprot	CDS	1001	1150	1000	+	0	Parent=MP000007;Rank=1;Identity=0.9000;Target=ex5at0_0:000007 1 99

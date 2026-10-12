@@ -1,0 +1,9 @@
+contig_1	miniprot	mRNA	2201	2341	1000	+	.	ID=MP000004;Rank=1;Identity=0.9000;Positive=0.9500;Target=ex4at0_0:000004 1 99
+contig_1	miniprot	CDS	2201	2341	1000	+	0	Parent=MP000004;Rank=1;Identity=0.9000;Target=ex4at0_0:000004 1 99
+contig_1	miniprot	stop_codon	2339	2341	0	+	0	Parent=MP000004;Rank=1
+contig_1	miniprot	mRNA	2801	2941	1000	+	.	ID=MP000005;Rank=1;Identity=0.9000;Positive=0.9500;Target=ex4at0_0:000005 1 99
+contig_1	miniprot	CDS	2801	2941	1000	+	0	Parent=MP000005;Rank=1;Identity=0.9000;Target=ex4at0_0:000005 1 99
+contig_1	miniprot	stop_codon	2939	2941	0	+	0	Parent=MP000005;Rank=1
+contig_2	miniprot	mRNA	301	441	1000	-	.	ID=MP000006;Rank=1;Identity=0.9000;Positive=0.9500;Target=ex4at0_0:000006 1 99
+contig_2	miniprot	CDS	301	441	1000	-	0	Parent=MP000006;Rank=1;Identity=0.9000;Target=ex4at0_0:000006 1 99
+contig_2	miniprot	stop_codon	301	303	0	-	0	Parent=MP000006;Rank=1

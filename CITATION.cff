@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use BuscoPainter, please cite it as below, and also cite BUSCO and miniprot."
+title: "BuscoPainter"
+abstract: "Transfers BUSCO marker-gene annotations (BUSCO genome-mode miniprot models) onto the genome assembly as annotated GenBank for viewing in Artemis. It is not a whole-genome gene prediction tool."
+type: software
+version: 0.1.0
+# date-released: YYYY-MM-DD   # set when the release is tagged
+license: MIT
+repository-code: "https://github.com/AroobAlhumaidy/BuscoPainter"
+authors:
+  - family-names: Alhumaidy
+    given-names: Aroob
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+    # affiliation: "Lancaster University"
+keywords:
+  - BUSCO
+  - GenBank
+  - Artemis
+  - miniprot
+  - genome annotation
+references:
+  - type: article
+    title: "BUSCO update: novel and streamlined workflows along with broader and deeper phylogenetic coverage for scoring of eukaryotic, prokaryotic, and viral genomes"
+    authors:
+      - family-names: Manni
+        given-names: Mosè
+      - family-names: Berkeley
+        given-names: Matthew R.
+      - family-names: Seppey
+        given-names: Mathieu
+      - family-names: Simão
+        given-names: Felipe A.
+      - family-names: Zdobnov
+        given-names: Evgeny M.
+    journal: "Molecular Biology and Evolution"
+    volume: 38
+    issue: 10
+    start: 4647
+    end: 4654
+    year: 2021
+    doi: "10.1093/molbev/msab199"
+  - type: article
+    title: "Protein-to-genome alignment with miniprot"
+    authors:
+      - family-names: Li
+        given-names: Heng
+    journal: "Bioinformatics"
+    volume: 39
+    issue: 1
+    year: 2023
+    doi: "10.1093/bioinformatics/btad014"

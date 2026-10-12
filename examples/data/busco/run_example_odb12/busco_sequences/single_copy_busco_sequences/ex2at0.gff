@@ -1,0 +1,4 @@
+contig_1	miniprot	mRNA	801	1086	1000	-	.	ID=MP000002;Rank=1;Identity=0.9000;Positive=0.9500;Target=ex2at0_0:000002 1 99
+contig_1	miniprot	CDS	1037	1086	1000	-	0	Parent=MP000002;Rank=1;Identity=0.9000;Target=ex2at0_0:000002 1 99
+contig_1	miniprot	CDS	801	996	1000	-	1	Parent=MP000002;Rank=1;Identity=0.9000;Target=ex2at0_0:000002 1 99
+contig_1	miniprot	stop_codon	801	803	0	-	0	Parent=MP000002;Rank=1

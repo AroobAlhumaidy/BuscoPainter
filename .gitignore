@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv*/
+venv*/
+env/
+.env
+.env.*
+
+# OS / editors
+.DS_Store
+._*
+.vscode/
+.idea/
+*.swp
+*~
+
+# Run outputs (keep the committed synthetic example output)
+results/
+my_output/
+out/
+outputs*/
+*.busco_painter.log
+orthodb_cache.json
+/*.gbk
+/*.tsv
+
+# Research data must never be committed: genomes, BUSCO runs, real outputs
+*.fasta
+*.fa
+*.fna
+*.fasta.gz
+*.fa.gz
+*.fna.gz
+!examples/data/genome.fasta
+busco_downloads/
+lineages/
+run_*/
+!examples/data/busco/run_example_odb12/
+
+# Other sequence and alignment data
+*.faa
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.cram
+*.sam
+*.paf
+*.vcf
+*.vcf.gz
+*.gbk
+*.gbff
+!examples/expected_output/*.gbk
+
+# Private material must never be committed: investigation reports, unpublished findings,
+# correspondence. Keep it outside this folder (it lives in ../BuscoPainter-private/).
+investigation/
+private/
+*.eml
+*.msg
+*.docx
+*.pdf

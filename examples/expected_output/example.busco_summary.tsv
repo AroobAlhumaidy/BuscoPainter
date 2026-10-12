@@ -1,0 +1,2 @@
+sample	fasta_contigs	busco_S_orthologs	busco_S_hit_rows	busco_D_orthologs	busco_D_hit_rows	busco_F_orthologs	busco_F_hit_rows	busco_M_orthologs	busco_C_orthologs	busco_n_orthologs	short_summary_agrees	exported_genes	exported_CDS	cds_segments	multi_segment_models	translations_attached	rejected_hits	warnings	dry_run	reconciled
+demo	3	5	5	1	3	1	1	2	6	9	True	9	9	11	2	7	0	5	False	True

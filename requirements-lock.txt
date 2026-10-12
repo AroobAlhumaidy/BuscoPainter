@@ -1,0 +1,14 @@
+# Exact environment used to validate BuscoPainter 0.1.0 (= T7.1-fixed.1) on real data.
+# Python 3.14.7, macOS arm64.  Install with:  pip install -r requirements-lock.txt -e .
+# numpy 2.5 needs Python >= 3.12; on Python 3.11 the package was checked with numpy 2.4.6.
+biopython==1.88
+numpy==2.5.4; python_version >= "3.12"
+numpy==2.4.6; python_version < "3.12"
+pandas==3.0.6
+python-dateutil==2.9.0.post0
+six==1.17.0
+pytest==9.1.1
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.21.0
