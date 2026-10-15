@@ -6,6 +6,8 @@
 |---|---|
 | `buscopainter` (or `python -m buscopainter`) | The painter (`buscopainter.painter`) |
 | `buscopainter-validate` (or `python -m buscopainter.validate`) | The independent output validator (`buscopainter.validate`) |
+| `buscopainter-artemis` (or `python -m buscopainter.artemis_export`) | Optional: indexed FASTA + GFF3 so Artemis can browse every contig ([artemis.md](artemis.md)) |
+| `buscopainter-validate-artemis` (or `python -m buscopainter.validate_artemis`) | Checks the `buscopainter-artemis` output |
 
 ## `buscopainter` options
 
@@ -79,6 +81,7 @@ Rules:
 |---|---|
 | 0 | All samples were processed. **This does not mean every hit was exported or is correct.** |
 | 2 | Fatal input error, for example a missing file, an unresolvable `run_*` directory, duplicate FASTA IDs, a malformed `full_table.tsv`, or whitespace in a path. Paths, BUSCO directories and full tables for all samples are checked before any sample is processed. FASTA problems (empty file, duplicate IDs) are found only when that sample is processed, so files for earlier samples may already be written. |
+| 3 | Count reconciliation failed: `exported + rejected` does not equal the number of non-Missing hit rows (see below) |
 | other | Unexpected error (Python traceback) |
 
 After a run:
@@ -112,9 +115,34 @@ buscopainter-validate --config config.json --outdir results --report results/val
 | `--check-faa` | Also compare translations with BUSCO's `busco_sequences/*/<id>.faa` |
 | `--report FILE` | Write a JSON report |
 
-It exits with 0 only if every check passes for every sample. The validator does not import the
+It prints `OVERALL: PASS` or `OVERALL: FAIL`, and exits with 0 only if every check passes for
+every sample (otherwise 1). The validator does not import the
 painter. It re-implements parsing, matching and counting separately.
 
 The validator expects the standard layout (`run_*/full_table.tsv`, uncompressed, and
 `run_*/busco_sequences/<status folder>/<id>.gff`). The painter also accepts `full_table.tsv.gz`
 and some older folder layouts, but the validator does not.
+
+## `buscopainter-artemis` options
+
+Reads the painter's GenBank output; it does not read BUSCO and does not change any gene model.
+See [artemis.md](artemis.md) for how to open the result.
+
+| Option | Meaning |
+|---|---|
+| `--config FILE` | Painter config (JSON). Exports every sample (or `--samples`) |
+| `--outdir DIR` | With `--config`: the painter output directory. With `--gbk`: the export directory |
+| `--export-root DIR` | With `--config`: write the `<prefix>_<sample>_artemis/` folders here instead of `--outdir` |
+| `--prefix TEXT` | Painter prefix (default: config `prefix`, else `Project`) |
+| `--samples NAME ...` | Only these samples |
+| `--gbk FILE --fasta FILE` | Convert one painter GenBank file and the FASTA it was made from |
+| `--tabix PATH` | `tabix` program (default: search `PATH`). Without it the command stops with exit code 2, because Artemis needs the `.tbi` index |
+| `--report FILE` | Write a JSON summary |
+
+Exit codes: 0 done; 2 error (for example, `tabix` is missing, the FASTA does not hold exactly the
+GenBank sequences, or a FASTA record has uneven line lengths so it cannot be indexed).
+
+## `buscopainter-validate-artemis` options
+
+`--config`, `--outdir`, `--export-root`, `--prefix`, `--samples`, `--tabix` and `--report`, as
+above. It prints `OVERALL: PASS` or `OVERALL: FAIL` and exits with 0 only on PASS.

@@ -77,7 +77,10 @@
 
 14. **OrthoDB API lookup** (`use_orthodb_api`) was not used in the validation. Per-contig export
     was validated in T7.1-fixed.2 and T7.1-fixed.3 (every contig file read with Biopython and with
-    Artemis 18.2.0's file reader; the Artemis GUI itself was not driven by a test).
+    Artemis 18.2.0's file reader; the Artemis GUI itself was not driven by a test). The
+    whole-assembly export (`buscopainter-artemis`) was tested in the Artemis 18.2.0 GUI on macOS
+    only, driven by a script rather than by hand. It needs `tabix`; without the `.tbi` index Artemis
+    cannot use the GFF3 (docs/artemis.md). Other Artemis versions and IGV/JBrowse were not tested.
 
 15. **The validator** reads JSON configs only, needs an uncompressed `full_table.tsv`, and needs the
     `busco_sequences/` layout.

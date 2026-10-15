@@ -32,6 +32,8 @@ test = ["pytest>=8.0"]
 [project.scripts]
 buscopainter = "buscopainter.painter:main"
 buscopainter-validate = "buscopainter.validate:main"
+buscopainter-artemis = "buscopainter.artemis_export:main"
+buscopainter-validate-artemis = "buscopainter.validate_artemis:main"
 
 [project.urls]
 Homepage = "https://github.com/AroobAlhumaidy/BuscoPainter"

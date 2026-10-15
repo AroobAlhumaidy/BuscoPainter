@@ -79,6 +79,19 @@ multi-record files were "inspected in Artemis" covered only their first contig. 
 T7.1-fixed.2, Artemis 18.2.0's own file reader (`artemis.jar`, run headless) has been run on every
 per-contig file: each loads the whole contig with the same features as Biopython reads.
 
+### Whole-assembly Artemis export (after T7.1-fixed.3)
+
+`buscopainter-artemis` (indexed FASTA + tabix-indexed GFF3) was run on the four validated
+T7.1-fixed.3 GenBank files. It does not change any gene model.
+
+| Check | Result |
+|---|---|
+| `buscopainter-validate-artemis` (FASTA copy, `.fai` vs `samtools faidx`, BGZF, GFF3 structure, models vs GenBank and `features.tsv`, phases, per-contig counts, tabix queries) | 4/4 PASS; 19,091 gene models, 1,849 multi-segment |
+| Artemis 18.2.0 GUI, scripted (`tools/artemis_gui_check/`): command-line route, every contig chosen in the drop-down list, feature view scrolled along each contig | 4/4 PASS: 725/725 contigs offered with the right length; every model loaded with the same coordinates, strand and joins as the GenBank file, and drawn |
+| Same, menu route (File → Open, File → Read An Entry), one assembly | PASS |
+| Multi-record GenBank in the Artemis GUI | first contig only (as documented) |
+| Uncompressed GFF3, or BGZF GFF3 without `.tbi` | not usable in Artemis (docs/artemis.md) |
+
 ### Negative control
 
 The pre-fix script (T7.1) **exits with code 0 on the validation data but fails 7 validator
@@ -114,8 +127,9 @@ pip install -r requirements-lock.txt -e ".[test]"
 python -m pytest
 ```
 
-There were 45 tests at T7.1-fixed.1 (65 now, including the 12 T7.1-fixed.2 and 8 T7.1-fixed.3
-regression tests), all on synthetic data with known answers. They pass on Python 3.11, 3.12, 3.13
+There were 45 tests at T7.1-fixed.1 (79 now, including the 12 T7.1-fixed.2 and 8 T7.1-fixed.3
+regression tests and 14 tests of the Artemis export, 7 of which need `tabix` and are skipped
+without it), all on synthetic data with known answers. They pass on Python 3.11, 3.12, 3.13
 and 3.14 (installed from the built wheel into fresh environments). They cover:
 
 - plus- and minus-strand coordinates;
@@ -134,7 +148,10 @@ and 3.14 (installed from the built wheel into fresh environments). They cover:
 - the synthetic example reproduces `examples/expected_output/` byte for byte and passes the
   validator;
 - the CLI entry points;
-- the SHA-256 of the reference implementation.
+- the SHA-256 of the reference implementation;
+- the Artemis export: designed coordinates and phases, escaping, sorting, a refused mismatched
+  FASTA, and the validator failing on six deliberate corruptions (coordinate, strand, phase,
+  missing model, changed FASTA base, missing `.tbi`).
 
 ## Reproducing the validation on your own data
 

@@ -138,3 +138,23 @@ Characters other than letters, digits, `.`, `_` and `-` in a contig id become `_
 if two ids map to the same name the run stops with an error. Records are identical to those in the
 multi-record file. Use these files in Artemis, which opens only the first record of a multi-record
 GenBank file. Validated on every contig of the four validation assemblies (docs/validation.md).
+
+## Indexed FASTA + GFF3 for Artemis (optional, `buscopainter-artemis`)
+
+`<prefix>_<sample>_artemis/` holds:
+
+- `<FASTA name>`: byte-identical copy of the sample FASTA, and `<FASTA name>.fai` (samtools
+  format).
+- `<prefix>_<sample>.busco.gff3.gz`: GFF3, BGZF-compressed, sorted by contig (FASTA order) and
+  start, with one `##sequence-region` per contig. Per BUSCO hit (one GenBank gene/CDS pair):
+  - `gene`: `ID=<locus_tag>`, `Name=<BUSCO id>`, `locus_tag`, `busco_id`, `busco_status`, `lineage`;
+  - `mRNA`: same span, `ID=<locus_tag>.mRNA`, `Parent=<locus_tag>`, `product`;
+  - one `CDS` row per CDS segment, all with `ID=<locus_tag>.CDS` and `Parent=<locus_tag>.mRNA`.
+    Coordinates, strand and segments are those of the GenBank `CDS`. Column 8 (phase) is derived
+    from `/codon_start` and the lengths of the segments before it, in transcription order. The
+    5'-most row also carries `codon_start`, `translation_attached` and the GenBank `/note`s.
+  - Reserved characters in values are percent-encoded (GFF3 rules).
+  - No `translation`: the GenBank file keeps the checked translations.
+- `<prefix>_<sample>.busco.gff3.gz.tbi`: tabix index. `buscopainter-artemis` stops if `tabix`
+  is not available.
+- `README.txt`: how to open the files.

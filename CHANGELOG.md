@@ -10,6 +10,16 @@ The first public release. It packages internal version `T7.1-fixed.3` as `buscop
 the validated reference implementation `buscoPainter.T7.1.fixed.py` (`T7.1-fixed.1`) plus the
 changes under "T7.1-fixed.2" and "T7.1-fixed.3" below.
 
+### Added after T7.1-fixed.3 (2026-10-13): whole-assembly Artemis view
+**No change to scientific output.** `painter.py` and `validate.py` are unchanged (SHA-256 pinned).
+- **Added** `buscopainter-artemis`: writes an indexed FASTA (byte-identical copy + `.fai`) and a
+  BGZF, tabix-indexed GFF3 of all contigs from the painter GenBank, so Artemis can browse every
+  contig from a drop-down list. It stops with a clear error if `tabix` is missing. Sequences are
+  never concatenated or edited. See docs/artemis.md.
+- **Added** `buscopainter-validate-artemis`, an independent check of that export.
+- **Added** `tools/artemis_gui_check/`, a script that drives the Artemis GUI to test the view.
+- The multi-record GenBank and `--per-contig` are unchanged.
+
 ### Release
 - **Licence** MIT (`LICENSE`); set in `pyproject.toml` and `CITATION.cff`.
 - **Repository** renamed to `BuscoPainter`; URLs updated in the README, `CONTRIBUTING.md`,
